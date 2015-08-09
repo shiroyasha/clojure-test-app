@@ -1,6 +1,5 @@
-(ns testapp.core)
+(ns testapp.core
+ (:require [compojure.handler :as handler]
+           [testapp.routes :as routes]))
 
-(defn app [req]
-  {:status  200
-   :headers {"content-Type" "text/html"}
-   :body    "Hello World!"})
+(def app (handler/site routes/main-routes))
