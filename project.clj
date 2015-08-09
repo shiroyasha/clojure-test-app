@@ -7,6 +7,7 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [ring "1.4.0"]
                  [compojure "1.4.0"]
+                 [hiccup "1.0.5"]
                  [ring/ring-mock "0.2.0"]]
 
   :plugins [[lein-ring "0.9.6"]]
